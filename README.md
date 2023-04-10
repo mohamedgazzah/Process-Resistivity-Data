@@ -4,6 +4,8 @@ This code takes in a dat file of Resistivity vs Magnetic field for n-different t
 
 This code will produce 4 plots if given 3 channels for measurment; assume you do a measurment for MR Hall and Hall with a 3 channel machine, then you will have 4 plots, first is the MR resistivity from channel 1, the second is Change in MR, third is Hall resistivity in 2 channel and fourth is Hall resistivity in channel 3(All temperatures are plotted on the same figure). If you have a measurment with less than 3 channels, put the other channel entries as "".
 
+The function to process and plot your data is PlotMRandHallFunc(filename,Ch1,Ch2,Ch3,Hysteresis,Diff), the other files are for importing the data and interpolating. You could also import the data yourself since the import file attached is specific to the format my machine uses. 
+
 The file which processes the data is attached and works in the following way if interested in variable post processing procedures. 
 [Data] = ProcessResData(filename,Ch1,Ch2,Ch3,Hysteresis,Diff)
  HOW TO USE
